@@ -1,3 +1,4 @@
+<h1>C-Thirtier</h1>
 A Clothing Swapping Website – Sustainable Wardrobe Management Platform
 
 C-Thriftier is a web-based application designed to promote sustainable fashion practices through an interactive garment exchange system.
