@@ -1,0 +1,683 @@
+/* =========================================================
+   🌿 CLOTHING SWAPPING AUTH STYLE (UPGRADED)
+   Clean, modern, responsive & interactive
+   ========================================================= */
+
+
+/* ========== VARIABLES ========== */
+
+:root {
+    --primary: #111111;
+    --secondary: #555555;
+    --light: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --accent: #3b82f6;
+    --accent-dark: #2563eb;
+    --background: #f9fafb;
+    --transition: all 0.3s ease;
+    --font: 'Poppins', sans-serif;
+    --google-red: #ff1904;
+    --facebook-blue: #1877f2;
+}
+
+
+/* ========== RESET ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   HEADER — FIXED VERSION
+   ========================================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: var(--light);
+    box-shadow: 0 5px 15px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* 🔹 Brand (logo + text side-by-side) */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.brand text {
+    font-family: 'Quintessential', cursive;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+/* 🔹 Navigation */
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+header nav a.active {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+header nav a:hover {
+    color: var(--accent-dark);
+}
+
+
+/* 🔹 Hamburger (for mobile) */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   AUTH HERO
+   ========================================================= */
+
+.auth-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    padding: 50px 5%;
+}
+
+.auth-left,
+.auth-right {
+    flex: 1 1 400px;
+}
+
+.auth-left {
+    order: 2;
+}
+
+.auth-right {
+    order: 1;
+}
+
+.auth-left h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.auth-left p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+.auth-left ul {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: disc;
+}
+
+.auth-left ul li {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: square;
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   AUTH BOX
+   ========================================================= */
+
+.auth-box {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--shadow);
+    border: 1px solid #ddd;
+    transition: transform var(--transition), box-shadow var(--transition);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.auth-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px var(--shadow);
+}
+
+.auth-box h2 {
+    margin-bottom: 25px;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #afafaf;
+    outline: none;
+    transition: var(--transition);
+    background: #fafafa;
+    color: var(--primary);
+}
+
+.auth-box input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   PHONE GROUP
+   ========================================================= */
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.phone-group select {
+    flex: 1;
+    max-width: 90px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    height: 44px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.phone-group input {
+    flex: 3;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    height: 44px;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   OPTIONS
+   ========================================================= */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.options a.forgot {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.options a.forgot:hover {
+    text-decoration: underline;
+    color: var(--accent-dark);
+}
+
+.remember-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--secondary);
+    user-select: none;
+}
+
+.remember-label input[type='checkbox'] {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    color: var(--light);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.auth-btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px) scale(1.05);
+}
+
+
+/* =========================================================
+   SWITCH TEXT
+   ========================================================= */
+
+.switch-text {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.switch-text a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+    color: var(--google-red);
+}
+
+
+/* =========================================================
+   SOCIAL LOGIN
+   ========================================================= */
+
+.social-login p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.social-buttons .google {
+    background-color: #ffffff;
+    color: var(--google-black);
+    /* fallback if variable not set */
+    border: 1px solid #ddd;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/250px-Google_Favicon_2025.svg.png');
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    background-size: 22px 22px;
+    padding: 10px 20px 10px 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-buttons .google:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    background-color: #cacaca;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.social-buttons .facebook {
+    background-color: var(--facebook-blue);
+    color: #fffafa;
+}
+
+.social-buttons .facebook:hover {
+    background-color: #125ed9;
+    transform: translateY(-2px) scale(1.03);
+}
+
+
+/* =========================================================
+   JOIN BUTTONS
+   ========================================================= */
+
+.join-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.join-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    color: #fff;
+}
+
+.join-buttons .signup-btn {
+    background-color: #000;
+}
+
+.join-buttons .signup-btn:hover {
+    background-color: #333;
+}
+
+.join-buttons .login-btn {
+    background-color: var(--accent-dark);
+}
+
+.join-buttons .login-btn:hover {
+    background-color: var(--accent);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.7s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .auth-hero {
+        flex-direction: column-reverse;
+        padding: 30px 5%;
+    }
+    header nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: var(--light);
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 10px 30px var(--shadow);
+    }
+    header nav.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
+    .brand-text {
+        font-size: 1.2rem;
+    }
+    .auth-box {
+        padding: 30px 25px;
+    }
+    .auth-left h2 {
+        font-size: 2rem;
+    }
+    .phone-group select {
+        max-width: 80px;
+    }
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background-color: #060512;
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 10%;
+    transition: var(--transition);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1 1 220px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Quintessential', cursive;
+}
+
+.footer-section h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer-socials a {
+    color: #ffffff;
+    margin-right: 12px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: rgb(0, 60, 255);
+}
+
+.footer-socials .fa-instagram:hover {
+    color: red;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #a1a1a1;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.footer-bottom a {
+    color: #a1a1a1;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Newsletter inside footer */
+
+.id-newsletter {
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpNewsletter 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.id-newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.id-newsletter input[type="email"] {
+    flex: 1;
+    min-width: 180px;
+    padding: 6px 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1c1b29;
+    color: #eee;
+    font-size: 0.85rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.id-newsletter input[type="email"]:focus {
+    border-color: var(--accent);
+    background-color: #22213a;
+    outline: none;
+}
+
+.id-newsletter button {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.id-newsletter button:hover {
+    background-color: var(--primary);
+    transform: scale(1.05);
+}
+
+.id-newsletter .message {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.id-newsletter .message.error {
+    color: #ff6b6b;
+}
+
+.id-newsletter .message.success {
+    color: #4caf50;
+}
+
+@keyframes fadeInUpNewsletter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

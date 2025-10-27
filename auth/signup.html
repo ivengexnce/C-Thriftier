@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Clothing Swapping</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/auth/auth.css" />
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="brand">
+            <img src="https://i.pinimg.com/736x/2c/49/85/2c49850b338e793846dae954a4673271.jpg" alt="Clothing Revolution Logo" />
+            <text>C-Thriftier</text>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+        <nav>
+            <a href="/index/index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="order.html">Order Now!</a>
+            <a href="signup.html" class="active">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- SIGNUP SECTION -->
+    <section class="auth-hero">
+        <div class="auth-left fade">
+            <h2>Join the Revolution 🌿</h2>
+            <p>Create your account and start swapping fashion sustainably. Make style eco-friendly and circular!</p>
+            <ul>
+                <li><i class="fas fa-recycle"></i> Eco-Friendly Swaps</li>
+                <li><i class="fas fa-hand-holding-usd"></i> Save Money</li>
+                <li><i class="fas fa-users"></i> Connect with the Community</li>
+            </ul>
+        </div>
+
+        <div class="auth-right fade">
+            <div class="auth-box">
+                <h2>Create Your Account</h2>
+                <form id="signupForm" method="POST" action="auth.php">
+                    <input type="hidden" name="action" value="signup" />
+
+                    <input type="text" name="fullname" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="tel" name="phone" placeholder="Phone Number" required />
+                    <input type="password" name="password" placeholder="Password" required />
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+
+                    <button type="submit" class="auth-btn black-white">Sign Up</button>
+                </form>
+
+
+                <p class="switch-text">
+                    Already have an account?
+                    <a href="/auth/auth.html" class="switch-link">Login</a>
+                </p>
+
+                <div class="social-login">
+                    <p>Or continue with</p>
+                    <div class="social-buttons">
+                        <button class="google">Google</button>
+                        <button class="facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-logo">C-Thriftier</h2>
+                <p>Premium fashion for the modern individual.<br>Elevate your style sustainably.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for exclusive offers.</p>
+                <form class="id-newsletter">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> info@cthriftier.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9954302900</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Borivali, Mumbai, Maharashtra, Bharat -400066</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 C-Thriftier. All rights reserved. |
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/auth/auth.js"></script>
+
+
+</body>
+
+</html>
