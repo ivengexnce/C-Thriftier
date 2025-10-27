@@ -42,3 +42,6 @@ It also serves as an academic and portfolio project for developers exploring fro
 
 🤝 Contributing
 Pull requests are alwaysa welcome! If you'd like to improve UI/UX, fix bugs, or add backend functionality—go ahead and submit your ideas.
+
+<img width="413" height="893" alt="image" src="https://github.com/user-attachments/assets/c8939ac9-1004-4adf-a8d9-280483df2407" />
+<img width="1350" height="3808" alt="127 0 0 1_5502_index_index html" src="https://github.com/user-attachments/assets/401d778e-8a79-4dc7-837f-e15512e94dd8" />
