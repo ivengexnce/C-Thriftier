@@ -44,4 +44,10 @@ It also serves as an academic and portfolio project for developers exploring fro
 Pull requests are alwaysa welcome! If you'd like to improve UI/UX, fix bugs, or add backend functionality—go ahead and submit your ideas.
 
 <img width="413" height="893" alt="image" src="https://github.com/user-attachments/assets/c8939ac9-1004-4adf-a8d9-280483df2407" />
+<img width="1259" height="460" alt="image" src="https://github.com/user-attachments/assets/d98f3f1e-b712-4894-bad7-8df8bfd36ff0" />
+<img width="1905" height="991" alt="image" src="https://github.com/user-attachments/assets/97ab0622-f759-4d94-b0e6-f92a03354946" />
+<img width="1350" height="910" alt="image" src="https://github.com/user-attachments/assets/49a649c7-bfc7-4006-8db7-2e6a670dda22" />
+<img width="1306" height="681" alt="image" src="https://github.com/user-attachments/assets/e6eaf6ee-ab3c-47fd-9ef2-08c4a3032c30" />
+
+
 <img width="1350" height="3808" alt="127 0 0 1_5502_index_index html" src="https://github.com/user-attachments/assets/401d778e-8a79-4dc7-837f-e15512e94dd8" />
