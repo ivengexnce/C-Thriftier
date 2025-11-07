@@ -47,5 +47,6 @@ Pull requests are alwaysa welcome! If you'd like to improve UI/UX, fix bugs, or 
 <img width="1350" height="910" alt="image" src="https://github.com/user-attachments/assets/49a649c7-bfc7-4006-8db7-2e6a670dda22" />
 <img width="1306" height="681" alt="image" src="https://github.com/user-attachments/assets/e6eaf6ee-ab3c-47fd-9ef2-08c4a3032c30" />
 <img width="1259" height="460" alt="image" src="https://github.com/user-attachments/assets/d98f3f1e-b712-4894-bad7-8df8bfd36ff0" />
+<img width="2494" height="8012" alt="127 0 0 1_5502_index_index html (5)" src="https://github.com/user-attachments/assets/7164eb77-4fc5-4e8b-9ebf-ae0807f4b63e" />
 
 
