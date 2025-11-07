@@ -43,8 +43,8 @@ It also serves as an academic and portfolio project for developers exploring fro
 🤝 Contributing
 Pull requests are alwaysa welcome! If you'd like to improve UI/UX, fix bugs, or add backend functionality—go ahead and submit your ideas.
 
-<img width="1844" height="9218" alt="127 0 0 1_5502_index_index html" src="https://github.com/user-attachments/assets/2251d02a-8dc3-4ce8-ae08-65568a5fae1f" />
-<img width="413" height="893" alt="image" src="https://github.com/user-attachments/assets/c8939ac9-1004-4adf-a8d9-280483df2407" />
+<img width="2560" height="7624" alt="127 0 0 1_5502_index_index html(Nest Hub Max)" src="https://github.com/user-attachments/assets/f0169fb0-ba35-4547-a2e8-c52aaa5ba81c" />
+
 <img width="1905" height="991" alt="image" src="https://github.com/user-attachments/assets/97ab0622-f759-4d94-b0e6-f92a03354946" />
 <img width="1350" height="910" alt="image" src="https://github.com/user-attachments/assets/49a649c7-bfc7-4006-8db7-2e6a670dda22" />
 <img width="1306" height="681" alt="image" src="https://github.com/user-attachments/assets/e6eaf6ee-ab3c-47fd-9ef2-08c4a3032c30" />
