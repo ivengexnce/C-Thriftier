@@ -396,7 +396,7 @@ nav a.active {
 }
 
 .faq-item h3::after {
-    content: '|';
+    content: '|+|';
     font-weight: 700;
     font-size: 1.3rem;
     transition: transform 0.3s ease;
@@ -408,6 +408,7 @@ nav a.active {
 
 .faq-item p {
     margin-top: 8px;
+    text-align: justify;
     color: var(--text-subtle);
     display: none;
     font-size: 1rem;
@@ -799,4 +800,5 @@ nav a.active {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
